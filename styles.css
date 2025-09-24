@@ -1,5 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
+/* Add to existing styles.css */
+.hero {
+  color: #fff; /* Ensure text pops */
+}
+.hero .btn:hover {
+  background: #0cc; /* Lighter cyan on hover */
+  transition: background 0.3s; /* Smooth transition */
+}
+.pillar {
+  border: 1px solid #0ff; /* Add borders */
+  padding: 10px;
+  border-radius: 5px;
+}
+.pillar:hover {
+  background: #033; /* Darker hover effect */
+}
+.demo-left, .demo-right, .offering {
+  margin: 10px 0; /* Add vertical spacing */
+}
+footer a {
+  color: #0ff; /* Link color */
+  text-decoration: underline;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -83,3 +106,4 @@ footer {
     max-width: 100%;
   }
 }
+
