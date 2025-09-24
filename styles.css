@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #011;
+  color: #ddd;
+}
+.hero {
+  position: relative;
+  height: 500px;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #00f;
+}
+.hero p {
+  font-size: 1.2em;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.pillar {
+  margin: 10px;
+  text-align: center;
+  max-width: 200px;
+}
+.pillar img {
+  max-width: 100%;
+  height: auto;
+}
+.demo {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.demo-left, .demo-right {
+  text-align: center;
+  max-width: 45%;
+}
+.demo-left img, .demo-right img {
+  max-width: 100%;
+  height: auto;
+}
+.offerings {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.offering {
+  text-align: center;
+  max-width: 45%;
+}
+.offering img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #022;
+}
+@media (max-width: 600px) {
+  .pillars, .demo, .offerings {
+    flex-direction: column;
+  }
+  .pillar, .demo-left, .demo-right, .offering {
+    max-width: 100%;
+  }
+}
